@@ -16,9 +16,9 @@ export default function Home() {
         <link rel="icon" href="/zka-icon.png" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className="bg-white px-7 sm:px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
+          <nav className="px-4 sm:px-0 py-10 mb-2 sm:mb-12 flex justify-between dark:text-white">
             <h1 className="font-burtons text-xl select-none">zkaa</h1>
             <ul className="flex items-center">
               <li>
@@ -37,14 +37,14 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+          <div className="text-center p-5 sm:p-10 pt-0 pb-10 sm:pt-10">
+            <h2 className="text-4xl sm:text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl select-none">
               Azka Azharan
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+            <h3 className="text-lg py-1 sm:text-2xl sm:py-2 dark:text-white md:text-3xl">
               Student and Developer
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-3xl mx-auto md:text-xl">
+            <p className="text-xs sm:text-base py-3 sm:py-5 leading-5 sm:leading-8 text-gray-800 dark:text-gray-200 max-w-3xl mx-auto md:text-xl">
               As a college student pursuing a degree in software engineering, i
               am constantly seeking new opportunities to learn and grow. I am
               passionate about using my skills and knowledge to create
@@ -55,7 +55,7 @@ export default function Home() {
               what the future holds and am confident that my passion for
               software engineering will guide me towards a rewarding career.
             </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+            <div className="text-3xl sm:text-5xl flex justify-center gap-8 sm:gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/zkazharan" target="_blank">
                 <AiFillGithub />
               </a>
@@ -69,8 +69,13 @@ export default function Home() {
                 <AiFillInstagram />
               </a>
             </div>
-            <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-72 h-72 mt-20 overflow-hidden md:w-86 md:h-86">
-              <Image src={zka} fill className="object-cover" />
+            <div className="select-none relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 sm:w-72 sm:h-72 mt-10 sm:mt-20 overflow-hidden md:w-86 md:h-86">
+              <Image
+                src={zka}
+                fill
+                className="object-cover"
+                draggable="false"
+              />
             </div>
           </div>
         </section>
@@ -107,18 +112,20 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Portofolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <h3 className="text-xl sm:text-3xl py-1 dark:text-white">
+              Portofolio
+            </h3>
+            <p className="text-xs sm:text-base py-2 leading-5 sm:leading-8 text-gray-800 dark:text-gray-200">
               Highlighting my skills and achievements through a selection of my
               best work
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/2 relative">
+          <div className="flex flex-col gap-10 py-5 sm:py-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/2 relative select-none">
               <div className="absolute w-full h-full bg-gray-800/0 hover:bg-gray-800/90 rounded-lg ease-in duration-200">
                 <a href="https://usayit.otech.id" target="_blank">
                   <div className="w-full h-full opacity-0 hover:opacity-100 p-10">
-                    <p className="text-center w-full h-full text-gray-200 flex justify-center items-center font-medium">
+                    <p className="text-center w-full h-full text-gray-200 flex justify-center items-center text-xs sm:text-base md:text-xl lg:text-xs xl:text-sm font-medium">
                       Welcome to uSayIt, your go-to platform for anonymous
                       self-expression. As the lead front-end developer for this
                       project, I am proud to present a platform that allows you
