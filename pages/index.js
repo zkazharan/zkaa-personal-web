@@ -117,7 +117,7 @@ export default function Home() {
                 responsive
               />
             </div>
-            <div className="basis-5/12 relative select-none">
+            <div className="basis-5/12 relative select-none mt-10">
               <div className="absolute w-full h-full bg-gray-800/0 hover:bg-gray-800/90 rounded-lg ease-in duration-200">
                 <a href="https://wordle.otech.id" target="_blank">
                   <div className="w-full h-full opacity-0 hover:opacity-100 p-10">
