@@ -4,6 +4,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import Image from "next/image";
 import zka from "../public/zka.png";
 import usayit from "../public/usayit.png";
+import wordle from "../public/wordle.png";
 import { useState } from "react";
 
 export default function Home() {
@@ -80,36 +81,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <section>
-          <div>
-            <h3 className="text-3xl py-1">Lorem ipsum</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-              quae voluptatem voluptates? Dicta sunt atque eligendi repellat
-              suscipit repudiandae quas cum veritatis, laudantium numquam
-              tempora nobis nemo exercitationem ratione fugit. Explicabo
-              voluptate voluptatibus commodi ut placeat molestiae possimus
-              laudantium, quaerat sequi, vitae voluptatem eaque voluptatum esse!
-              Molestiae, dolorum magni, quisquam excepturi quo quibusdam vel
-              odio debitis consectetur facilis eaque id?
-            </p>
-          </div>
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image src={code} width={100} height={100} className="mx-auto" />
-              <h3 className="text-lg font-medium pt-8 pb-2">Title</h3>
-              <p className="py-2">
-                desc descd escdescdes cdescd es cdesc d esc desc descd escdes
-                cdesc descd escd escd escd esc desc
-              </p>
-              <h4 className="py-4 text-teal-600">Sub Title</h4>
-              <p className="text-gray-800 py-1">point 1</p>
-              <p className="text-gray-800 py-1">point 2</p>
-              <p className="text-gray-800 py-1">point 3</p>
-            </div>
-          </div>
-        </section> */}
-
         <section>
           <div>
             <h3 className="text-xl sm:text-3xl py-1 dark:text-white">
@@ -120,9 +91,9 @@ export default function Home() {
               best work
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-5 sm:py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/2 relative select-none">
-              <div className="absolute w-full h-full bg-gray-800/0 hover:bg-gray-800/90 rounded-lg ease-in duration-200">
+          <div className="flex flex-col py-5 sm:py-10 justify-around lg:flex-row lg:flex-wrap">
+            <div className="basis-5/12 relative select-none">
+              <div className="absolute w-full h-full bg-gray-800/0 hover:bg-gray-800/90 rounded-lg ease-in duration-200 p-1">
                 <a href="https://usayit.otech.id" target="_blank">
                   <div className="w-full h-full opacity-0 hover:opacity-100 p-10">
                     <p className="text-center w-full h-full text-gray-200 flex justify-center items-center text-xs sm:text-base md:text-xl lg:text-xs xl:text-sm font-medium">
@@ -131,17 +102,37 @@ export default function Home() {
                       project, I am proud to present a platform that allows you
                       to share your thoughts and feelings freely, without fear
                       of judgement. With just a few clicks, your words will be
-                      shared on various social media outlets, giving you the
-                      opportunity to connect with others and express yourself
-                      authentically. So go ahead and let your voice be heard -
-                      uSayIt is here to provide the space and the freedom to do
-                      just that.
+                      shared on various social media outlets. So go ahead and
+                      let your voice be heard - uSayIt is here to provide the
+                      space and the freedom to do just that.
                     </p>
                   </div>
                 </a>
               </div>
               <Image
                 src={usayit}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                responsive
+              />
+            </div>
+            <div className="basis-5/12 relative select-none">
+              <div className="absolute w-full h-full bg-gray-800/0 hover:bg-gray-800/90 rounded-lg ease-in duration-200">
+                <a href="https://wordle.otech.id" target="_blank">
+                  <div className="w-full h-full opacity-0 hover:opacity-100 p-10">
+                    <p className="text-center w-full h-full text-gray-200 flex justify-center items-center text-xs sm:text-base md:text-xl lg:text-xs xl:text-sm font-medium">
+                      Wordle is a word guessing game that I developed using
+                      Next.js and Tailwind CSS. Players must correctly identify
+                      the letters in a hidden word. The project allowed me to
+                      showcase my front-end development skills and create an
+                      engaging and visually appealing game.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <Image
+                src={wordle}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
