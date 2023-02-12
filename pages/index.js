@@ -70,8 +70,9 @@ export default function Home() {
                 <AiFillInstagram />
               </a>
             </div>
-            <div className="select-none relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 sm:w-72 sm:h-72 mt-10 sm:mt-20 overflow-hidden md:w-86 md:h-86">
+            <div className="select-none relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 sm:w-72 sm:h-72 mt-10 mb-10 sm:mt-20 sm:mb-20 overflow-hidden md:w-86 md:h-86">
               <Image
+                alt="profile photo"
                 src={zka}
                 fill
                 className="object-cover"
@@ -84,62 +85,18 @@ export default function Home() {
         <section>
           <div>
             <h3 className="text-xl sm:text-3xl py-1 dark:text-white">
-              Portofolio
+              Step-by-Step Guide to Installing Ubuntu Server on VirtualBox
             </h3>
             <p className="text-xs sm:text-base py-2 leading-5 sm:leading-8 text-gray-800 dark:text-gray-200">
-              Highlighting my skills and achievements through a selection of my
-              best work
+              In this tutorial, you will learn how to install Ubuntu Server on a
+              virtual machine using VirtualBox. VirtualBox is a powerful and
+              free virtualization software that allows you to run multiple
+              operating systems on a single physical machine. Ubuntu Server is a
+              popular and open-source operating system that is widely used for
+              server applications.
             </p>
           </div>
-          <div className="flex flex-col py-5 sm:py-10 justify-around lg:flex-row lg:flex-wrap">
-            <div className="basis-5/12 relative select-none">
-              <div className="absolute w-full h-full bg-gray-800/0 hover:bg-gray-800/90 rounded-lg ease-in duration-200 p-1">
-                <a href="https://usayit.otech.id" target="_blank">
-                  <div className="w-full h-full opacity-0 hover:opacity-100 p-10">
-                    <p className="text-center w-full h-full text-gray-200 flex justify-center items-center text-xs sm:text-base md:text-xl lg:text-xs xl:text-sm font-medium">
-                      Welcome to uSayIt, your go-to platform for anonymous
-                      self-expression. As the lead front-end developer for this
-                      project, I am proud to present a platform that allows you
-                      to share your thoughts and feelings freely, without fear
-                      of judgement. With just a few clicks, your words will be
-                      shared on various social media outlets. So go ahead and
-                      let your voice be heard - uSayIt is here to provide the
-                      space and the freedom to do just that.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <Image
-                src={usayit}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                responsive
-              />
-            </div>
-            <div className="basis-5/12 relative select-none mt-10">
-              <div className="absolute w-full h-full bg-gray-800/0 hover:bg-gray-800/90 rounded-lg ease-in duration-200">
-                <a href="https://wordle.otech.id" target="_blank">
-                  <div className="w-full h-full opacity-0 hover:opacity-100 p-10">
-                    <p className="text-center w-full h-full text-gray-200 flex justify-center items-center text-xs sm:text-base md:text-xl lg:text-xs xl:text-sm font-medium">
-                      Wordle is a word guessing game that I developed using
-                      Next.js and Tailwind CSS. Players must correctly identify
-                      the letters in a hidden word. The project allowed me to
-                      showcase my front-end development skills and create an
-                      engaging and visually appealing game.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <Image
-                src={wordle}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                responsive
-              />
-            </div>
-          </div>
+          <div className="text-xs sm:text-base pl-2 pb-10">a</div>
         </section>
       </main>
     </div>
