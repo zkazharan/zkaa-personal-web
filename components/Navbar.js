@@ -1,10 +1,14 @@
 import Link from "next/link";
 import { useContext } from "react";
+import { useRouter } from "next/router";
 
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { DarkMode, LanguageSwitch } from "../components/Context";
 
 export default function Navbar() {
+  const arrPath = useRouter().pathname.split("/");
+  const path = arrPath[arrPath.length - 1];
+
   const { darkMode, setDarkMode } = useContext(DarkMode);
   const { language, languageHandle } = useContext(LanguageSwitch);
 
@@ -14,12 +18,16 @@ export default function Navbar() {
         <h1 className="font-burtons text-xl select-none">zkaa</h1>
       </Link>
       <ul className="flex items-center gap-8 sm:gap-12">
-        <li>
-          <BsFillMoonStarsFill
-            onClick={() => setDarkMode(!darkMode)}
-            className="cursor-pointer text-2xl"
-          />
-        </li>
+        {path === "register" || path === "login" ? (
+          <></>
+        ) : (
+          <li>
+            <BsFillMoonStarsFill
+              onClick={() => setDarkMode(!darkMode)}
+              className="cursor-pointer text-2xl"
+            />
+          </li>
+        )}
         <li>
           <h1
             className="font-burtons text-2xl select-none cursor-pointer"
