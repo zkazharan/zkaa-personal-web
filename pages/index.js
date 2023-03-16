@@ -192,7 +192,31 @@ export default function Home() {
                   responsive="true"
                 />
               </div>
-              <div className="basis-1/2 relative select-none mb-4 lg:mb-0"></div>
+              <div className="basis-1/2 relative select-none mb-4 lg:mb-0 border-solid border-2 border-white rounded-lg">
+                <div className="absolute w-full h-full bg-gray-800/0 hover:bg-gray-800/90 rounded-lg ease-in duration-200 p-1">
+                  <Link href="/process-and-thread">
+                    <div className="w-full h-full opacity-0 hover:opacity-100 p-10">
+                      <p className="text-center w-full h-full text-gray-200 flex justify-center items-center text-xs sm:text-base md:text-xl lg:text-xs xl:text-sm font-medium">
+                        <span className={language === "id" ? "hidden" : ""}>
+                          These are questions and answers about processes and
+                          threads from the Operating System course
+                        </span>
+                        <span className={language === "en" ? "hidden" : ""}>
+                          Berikut merupakan soal beserta jawaban tentang proses
+                          dan thread dari mata kuliah sistem operasi
+                        </span>
+                      </p>
+                    </div>
+                  </Link>
+                </div>
+                <Image
+                  src="/pnt/pnt-cover.png"
+                  className="rounded-lg object-cover"
+                  width={1920}
+                  height={1080}
+                  responsive="true"
+                />
+              </div>
             </span>
           </div>
         </section>
